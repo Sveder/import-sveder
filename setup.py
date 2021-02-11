@@ -2,6 +2,7 @@ import atexit
 from distutils.core import setup
 from setuptools.command.install import install
 
+
 class PostInstallCommand(install):
     def __init__(self, *args, **kwargs):
         super(PostInstallCommand, self).__init__(*args, **kwargs)
@@ -10,13 +11,12 @@ class PostInstallCommand(install):
     def run(self):
         import sveder
         sveder.open_sveder_com()
-        install.run(self)
 
 
 setup(
     name = 'sveder',
     packages = ['sveder'],
-    version = '0.5',
+    version = '0.6',
     description = 'Visit sveder.com :)',
     author = 'Sveder',
     author_email = 'm@sveder.com',
