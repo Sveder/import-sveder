@@ -15,7 +15,7 @@ class PostInstallCommand(install):
 setup(
     name = 'sveder',
     packages = ['sveder'],
-    version = '0.5',
+    version = '0.7',
     description = 'Visit sveder.com :)',
     author = 'Sveder',
     author_email = 'm@sveder.com',
