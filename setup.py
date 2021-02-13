@@ -13,14 +13,15 @@ class PostInstallCommand(install):
 
 
 setup(
-    name = 'sveder',
-    packages = ['sveder'],
-    version = '0.7',
-    description = 'Visit sveder.com :)',
-    author = 'Sveder',
-    author_email = 'm@sveder.com',
-    url = 'https://github.com/Sveder/import-sveder',
-    download_url = 'https://github.com/Sveder/import-sveder/archive/0.1.tar.gz',
-    keywords = ['sveder', 'shameless', 'self', 'promotion'],
+    name='sveder',
+    packages=['sveder'],
+    version='0.8',
+    description='Visit sveder.com :)',
+    author='Sveder',
+    author_email='m@sveder.com',
+    url='https://github.com/Sveder/import-sveder',
+    download_url='https://github.com/Sveder/import-sveder/archive/0.1.tar.gz',
+    keywords=['sveder', 'shameless', 'self', 'promotion'],
     cmdclass={'install': PostInstallCommand},
+    scripts=['sveder/sveder'],
 )

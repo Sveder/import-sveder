@@ -1,0 +1,5 @@
+#!python
+
+import sveder
+
+sveder.open_sveder_com()
