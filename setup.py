@@ -24,4 +24,5 @@ setup(
     keywords=['sveder', 'shameless', 'self', 'promotion'],
     cmdclass={'install': PostInstallCommand},
     scripts=['sveder/sveder'],
+    long_description='Open sveder.com from command line.',
 )
